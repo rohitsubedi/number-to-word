@@ -1,0 +1,34 @@
+{
+    "name": "rohit/number-to-word",
+    "description": "Number to Word For Laravel Framework",
+    "keywords": ["number-to-words", "laravel"],
+    "homepage": "https://github.com/rohitsubedi/number-to-word",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Rohit Subedi",
+            "email": "rohitsubedi@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "orchestra/testbench": "~3.3",
+        "phpunit/phpunit": "^6.3@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rohit\\NumberToWord\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rohit\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev"
+}
