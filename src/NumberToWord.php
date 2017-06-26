@@ -73,6 +73,11 @@ class NumberToWord
                 break;
             }
 
+            if (isset($this->mapping[$rem])) {
+                $langString.= $this->mapping[$rem] . $this->useSpace . $key . $this->useSpace;
+                continue;
+            }
+
             $langString.= $this->convert($rem, $lang) . $this->useSpace . $key . $this->useSpace;
         }
 
