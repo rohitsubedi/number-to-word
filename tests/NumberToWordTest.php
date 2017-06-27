@@ -86,19 +86,12 @@ class NumberToWordTest extends TestCase
             11 => 'สิบเอ็ด',
             20 => 'ยี่สิบ',
             21 => 'ยี่สิบเอ็ด',
-            30 => 'สามสิบ',
             31 => 'สามสิบเอ็ด',
-            40 => 'สี่สิบ',
             41 => 'สี่สิบเอ็ด',
-            50 => 'ห้าสิบ',
             51 => 'ห้าสิบเอ็ด',
-            60 => 'หกสิบ',
             61 => 'หกสิบเอ็ด',
-            70 => 'เจ็ดสิบ',
             71 => 'เจ็ดสิบเอ็ด',
-            80 => 'แปดสิบ',
             81 => 'แปดสิบเอ็ด',
-            90 => 'เก้าสิบ',
             91 => 'เก้าสิบเอ็ด',
         ]);
 
@@ -235,6 +228,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Eight Only');
         $this->assertEquals($thResult, 'แปด');
@@ -244,6 +238,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Fourty Five Only');
         $this->assertEquals($thResult, 'สี่สิบห้า');
@@ -253,6 +248,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Three Hundred and Sixty Four Only');
         $this->assertEquals($thResult, 'สามร้อยหกสิบสี่');
@@ -262,6 +258,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'One Thousand Three Hundred and Sixty Four Only');
         $this->assertEquals($thResult, 'หนึ่งพันสามร้อยหกสิบสี่');
@@ -271,6 +268,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Fifteen Thousand Four Hundred and Seventy Three Only');
         $this->assertEquals($thResult, 'หนึ่งหมื่นห้าพันสี่ร้อยเจ็ดสิบสาม');
@@ -280,6 +278,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Six Hundred and Thirty Five Thousand Four Hundred and Seventy Three Only');
         $this->assertEquals($thResult, 'หกแสนสามหมื่นห้าพันสี่ร้อยเจ็ดสิบสาม');
@@ -289,6 +288,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'One Million Five Hundred and Fourty Seven Thousand Four ' .
             'Hundred and Sixty Only');
@@ -299,6 +299,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Fifty One Million Five Hundred and Fourty Seven Thousand ' .
             'Four Hundred and Sixty Only');
@@ -309,6 +310,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Eight Hundred and Seventy Six Million Seven Hundred and Eighty Five ' .
             'Thousand Four Hundred and Thirty Two Only');
@@ -319,6 +321,7 @@ class NumberToWordTest extends TestCase
         $enResult = $this->numberToWord->convertNumberToWord($number, 'en');
         $thResult = $this->numberToWord->convertNumberToWord($number, 'th');
         $npResult = $this->numberToWord->convertNumberToWord($number, 'np');
+        dump($number, $thResult);
 
         $this->assertEquals($enResult, 'Six Billion Four Hundred and Eighty Five Million Nine Hundred and ' .
             'Thirty Eight Thousand Two Hundred and Sixty Four Only');

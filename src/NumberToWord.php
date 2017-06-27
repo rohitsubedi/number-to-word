@@ -65,7 +65,13 @@ class NumberToWord
                 if (!isset($this->mapping[$rem])) {
                     $val = floor($rem / 10);
                     $rem = $rem % 10;
-                    $langString.= $this->useSpace . ($this->mapping[($val * 10)] ?? '') . $this->useSpace;
+
+                    if (isset($this->mapping[($val * 10)])) {
+                        $langString.= $this->useSpace . $this->mapping[($val * 10)] . $this->useSpace;
+                    } else {
+                        $langString.= $this->useSpace . ($this->mapping[$val] ?? '') . $this->useSpace .
+                            ($this->mapping[10] ?? '') . $this->useSpace;
+                    }
                 }
 
                 $langString.= ($rem ? ($this->mapping[$rem] ?? '') : '');
